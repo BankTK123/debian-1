@@ -38,7 +38,7 @@ echo -e "===========================================" | lolcat
 echo -e "   Script by Yusuf Ardiansyah            "| lolcat
 myip=`ifconfig | grep -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0' | head -n1`;
 echo -e "   Config OVPN:                          "| lolcat
-echo -e "   http://$myip:8090/1194-client.ovpn      " | lolcat
+echo -e "   http://$myip:81/1194-client.ovpn      " | lolcat
 echo -e "-------------------------------------------" | lolcat
 echo -e ""
 echo -e ""
