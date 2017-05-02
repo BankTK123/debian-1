@@ -29,10 +29,10 @@ ENABLE IPV4 AND IPV6
 COMPLETE 1%
 "
 echo ipv4 >> /etc/modules
-echo ipv6 >> /etc/modules
+#echo ipv6 >> /etc/modules
 sysctl -w net.ipv4.ip_forward=1
 sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/g' /etc/sysctl.conf
-sed -i 's/#net.ipv6.conf.all.forwarding=1/net.ipv6.conf.all.forwarding=1/g' /etc/sysctl.conf
+#sed -i 's/#net.ipv6.conf.all.forwarding=1/net.ipv6.conf.all.forwarding=1/g' /etc/sysctl.conf
 sysctl -p
 clear
 echo "
@@ -300,7 +300,7 @@ echo "Webmin   : http://$myip:10000/" | lolcat
 echo "Squid3   : 8080" | lolcat
 echo "OpenSSH  : 22, 80" | lolcat
 echo "Dropbear : 443, 109"| lolcat
-echo "OpenVPN  : TCP Port 55 (client config : http://$myip:8090/1194-client.ovpn)" | lolcat
+echo "OpenVPN  : TCP Port 55 (client config : http://$myip:81/1194-client.ovpn)" | lolcat
 echo "Timezone : Asia/Jakarta"| lolcat
 echo "Fail2Ban : [on]"| lolcat
 echo "Power By : Yusuf Ardiansyah"| lolcat
