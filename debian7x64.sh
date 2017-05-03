@@ -308,6 +308,7 @@ echo "Timezone : Asia/Jakarta"| lolcat
 echo "Fail2Ban : [on]"| lolcat
 echo "Power By : YUSUF-ARDIANSYAH"| lolcat
 echo "Phone    : +6282139743432"| lolcat
+echo "Facebook : fb.com/t34mh4ck3r"| lolcat
 echo "PIN BBM  : yu-suf " | lolcat
 echo "Telegram : @ScriptVps"| lolcat
 echo ""
